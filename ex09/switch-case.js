@@ -1,0 +1,16 @@
+/*
+DECLARAÇÃO SWITCH-CASE
+
+SWITCH (EXPRESSÃO) {
+    CASE 1:
+        BLOCO DE CÓDIGO
+    BREAK;
+
+    CASE 2:
+        BLOCO DE CÓDIGO
+    BREAK;
+
+    DEFAULT:
+        BLOCO DE CÓDIGO
+}
+*/
