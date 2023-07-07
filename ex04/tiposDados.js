@@ -56,12 +56,6 @@ const estudante = {
 console.log(estudante);
 
 
-let num5 = 2;
-let num6 = 3;
-console.log(num5 + num6);
- 
-
-
 
 
 
