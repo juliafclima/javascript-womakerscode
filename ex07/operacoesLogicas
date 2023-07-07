@@ -1,0 +1,19 @@
+// OPERADOR AND / E -> && (SÓ É TRUE SE TODOS FOREM)
+console.log(false && false); // false
+console.log(false && true); // false 
+console.log(true && false); // false
+console.log(true && true + '\n'); // true
+
+// OPERADOR OR / OU -> || (UM TRUE JÁ BASTA)
+console.log(false || false); // false
+console.log(false || true); // true
+console.log(true || false); // true
+console.log(true || true); // true
+
+// OPERADOR NOT / NÃO -> !
+console.log('\n' + !false); // true
+console.log(!true); // false
+
+
+
+
