@@ -80,4 +80,4 @@ let frase = 'lastIndexOf'
 let posicaoFrase = frase.lastIndexOf('Of')
 
 console.log(`MÉTODO .LASTINDEXOF()\nFrase: ${frase}`);
-console.log(`Of em lastIndexOf está no indice: ${posicaoFrase}\n`);
+console.log(`Of em lastIndexOf está na ${posicaoFrase} posição\n`);
