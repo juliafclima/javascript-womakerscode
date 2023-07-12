@@ -1,46 +1,74 @@
-// FOREACH()
+// FOREACH() - LISTA UM ARRAY
 
-let cores = [' 0 Amarelo', ' 1 Azul', ' 2 Verde.'];
-console.log(`MÉTODO .FOREACH()\nElementos: ${cores}`);
-console.log(`Com o .forEach: \n`);
+let cores = [' 0 Amarelo', ' 1 Azul', ' 2 Verde'];
 
-// MAP()
+console.log(`MÉTODO .FOREACH()\nElementos: ${cores}\nLista:`);
 
-let salgados = [' 0 Bolinha de queijo', ' 1 Coxinha', ' 2 Risole'];
-console.log(`MÉTODO .MAP()\nElementos: ${salgados}`);
+cores.forEach((listaCores) => {
+    console.log(listaCores);
+})
 
-// FILTER()
+// MAP() - EXECUTANDO UMA FUNÇÃO EM CADA ARRAY
 
-let moveis = [' 0 Estante', ' 1 Sófa', ' 2 Cama'];
-console.log(`MÉTODO .FILTER()\nElementos: ${moveis}`);
-console.log(`Com o .filter: \n`);
+console.log('\nMÉTODO .MAP()');
+
+let salgados = [
+    {salgado: 'Bolinha de queijo', preco: 2.50},
+    {salgado: 'Coxinha', preco: 3.50},
+    {salgado: 'Risole de carne', preco: 2.20}
+];
+
+const salgado = salgados.map((item) => {
+    console.log(`Salgado: ${item.salgado}`);
+})
+
+const preco = salgados.map((item) => {
+    console.log(`Preço: R$${item.preco}`);
+})
+
+// FILTER() - FILTRA UMA INFORMAÇÃO DENTRO DE UMA ARRAY
+
+console.log('\nMÉTODO .FILTER()');
+
+let moveis = [
+    {movel: 'Estante', preco: 900},
+    {movel: 'Sófa', preco: 2400},
+    {movel: 'Cama', preco: 7200},
+    {movel: 'Mesa de cabiceira', preco: 680},
+    {movel: 'Mesa de jantar', preco: 1390}
+];
+
+const comprarMoveis = moveis.filter(movel => movel.preco >= 1000);
+
+console.log('Móveis que custam mais de R$1.000,00\n');
+console.log(comprarMoveis);
 
 // REDUCE()
 
+console.log('\nMÉTODO .REDUCE()');
+
 let roupas = [' 0 Camisa', ' 1 Shorts', ' 2 Meia'];
-console.log(`MÉTODO .REDUCE()\nElementos: ${roupas}`);
-console.log(`Com o .reduce: \n`);
 
 // EVERY()
 
+console.log('\nMÉTODO .EVERY()');
+
 let superHerois = [' 0 Capitã Marvel', ' 1 She-Hulk', ' 2 Homem Aranha'];
-console.log(`MÉTODO .EVERY()\nElementos: ${superHerois}`);
-console.log(`Com o .every: \n`);
 
 // SOME()
 
+console.log('\nMÉTODO .SOME()');
+
 let jogos = [' 0 The Last of Us', ' 1 Uncharted', ' 2 Tomb Raider']
-console.log(`MÉTODO .SOME()\nElementos: ${jogos}`);
-console.log(`Com o .some: \n`);
 
 // FIND()
 
+console.log('\nMÉTODO .FIND()');
+
 let acessorios = [' 0 Fone de ouvido', ' 1 Capa de celular', ' 2 Beijamin'];
-console.log(`MÉTODO .FIND()\nElementos: ${acessorios}`);
-console.log(`Com o .find: \n`);
 
 // FINDINDEX()
 
+console.log('\nMÉTODO .FINDINDEX()');
+
 let comidas = [' 0 Strogonoff', ' 1 Ensopadinho de salsicha', ' 2 Frango à minalesa'];
-console.log(`MÉTODO .FINDINDEX()\nElementos: ${comidas}`);
-console.log(`Com o .findIndex: \n`);
