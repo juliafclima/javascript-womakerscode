@@ -8,7 +8,7 @@ cores.forEach((listaCores) => {
     console.log(listaCores);
 })
 
-// MAP() - EXECUTANDO UMA FUNÇÃO EM CADA ARRAY
+// MAP() - EXECUTA UMA FUNÇÃO
 
 console.log('\nMÉTODO .MAP()');
 
@@ -26,7 +26,7 @@ const preco = salgados.map((item) => {
     console.log(`Preço: R$${item.preco}`);
 })
 
-// FILTER() - FILTRA UMA INFORMAÇÃO DENTRO DE UMA ARRAY
+// FILTER() - FILTRA UMA INFORMAÇÃO 
 
 console.log('\nMÉTODO .FILTER()');
 
@@ -43,11 +43,17 @@ const comprarMoveis = moveis.filter(movel => movel.preco >= 1000);
 console.log('Móveis que custam mais de R$1.000,00\n');
 console.log(comprarMoveis);
 
-// REDUCE()
+// REDUCE() - EXECUTA E REDUZ A UMA ÚNICA INFORMAÇÃO
 
-console.log('\nMÉTODO .REDUCE()');
+let reais = [27.86, 71.05, 36.97];
 
-let roupas = [' 0 Camisa', ' 1 Shorts', ' 2 Meia'];
+console.log(`\nMÉTODO .REDUCE()\nValores: R$${reais.join(' + ')}`);
+
+let somarValores = reais.reduce((total, valor) => {
+    return total + valor;
+});
+
+console.log(`A soma dos valores é R$${somarValores}`);
 
 // EVERY()
 
