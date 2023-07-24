@@ -1,3 +1,5 @@
+//@ts-check
+
 // OBJETOS EM JAVASCRIPT
 
 let pessoa = {
@@ -5,8 +7,8 @@ let pessoa = {
     sobrenome: 'Lima',
     idade: 21,
     cor: 'preta',
-    profissao: 'desenvolvedora'
-}
+    estado: 'Rio de janeiro'
+};
 
 console.log(pessoa);
 
@@ -34,11 +36,12 @@ console.log(`\nMinha cor é ${pessoa['cor']}!`); // minha cor é branca!
 
 // adiciona uma propriedade 
 
-let nascida = pessoa['naturalidade'] = 'Petrópolis'; 
+let cidade = 'naturalidade';
 
-console.log(`\nSou natural de ${nascida}!`); // sou natural de Petrópolis!
+pessoa['cidade'] = 'Petrópolis';
+
+console.log(`\nSou natural de ${pessoa['cidade']}!`);
 
 
-
-
+console.log(`\nOlá, meu nome é ${pessoa.nome} ${pessoa.sobrenome}! Tenho ${pessoa.idade} anos e moro na cidade de ${pessoa['cidade']} do estado do ${pessoa.estado}, minha nacionalidade é ${pessoa.nacionalidade}. Sou ${pessoa['cor']}.\n`);
 
