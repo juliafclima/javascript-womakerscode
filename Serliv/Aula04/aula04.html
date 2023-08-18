@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação em JavaScript</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Lógica de Programação em JavaScript</h1>
+    <p>PROMPT -> PEDE PRA ESCREVER NA TELA</p>
+    <p>ALERT -> MOSTRA NA TELA</p>
+
+    <script>
+        /*
+        pedir para o usuario digitar um numero
+        converter em numero inteiro
+        pedir para o usuario digitar outro numero
+        converter em numero inteiro
+        
+        mostrar a subtracao concatenando com o texto "a subtracao é: ...
+        mostrar a multiplicacao concatenando com o texto "a multiplicacao é: ..."
+        mostrar a divisao concatenando com o texto "a divisao é: ...
+        mostrar a soma concatenando com o texto "a soma é: ...
+        */
+
+        var n1 = prompt("Digite um número: ");
+        var n2 = prompt("Digite outro número: ");
+
+        n1 = parseFloat(n1);
+        n2 = parseFloat(n2);
+
+        alert("A soma destes números é ... " + (n1 + n2));
+        alert("A subtração destes números é ... " + (n1 - n2));
+        alert("A multiplicacao destes números é ... " + (n1 * n2));
+        alert("A divisao destes números é ... " + (n1 / n2));
+    </script>
+</body>
+</html>

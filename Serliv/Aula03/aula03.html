@@ -11,12 +11,17 @@
     <h1>Lógica de Programação em JavaScript</h1>
 
     <script>
-        var num1 = prompt("Digite um número: ");
-        var num2 = prompt("Digite outro número: ");
+        // CONVERTER STRING PARA FLOAT
+        var n1 = prompt("Digite um número: "); // typeof = string
+        //num1 = parseFloat(num1) // typeof = number
 
-        var resultado = parseInt(num1 + num2)
-        
-        alert(resultado)
+        var n2 = prompt("Digite outro número: "); // typeof = string
+        //num2 = parseFloat(num2) // typeof = number 
+
+        var resultado = parseFloat(n1) + parseFloat(n2)
+
+        alert(`${n1} + ${n2} = ${resultado}`)
+
     </script>
 </body>
 </html>
